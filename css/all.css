@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic,700,700italic&subset=latin,cyrillic);
 @import url(fonts.css);
 @import url(normalize.css);
 @import url(clearfix.css);
@@ -16,11 +17,11 @@
 
 /*------ typographic styles ------*/
 body{
-	font: 14px/1.2 Arial, Helvetica, sans-serif;
+	font: 13px/17px 'open sans', Arial, Helvetica, sans-serif;
 	height: 100%;
-	color: #000;
+	color: #43515e;
 	background: #fff;
-	min-width: 990px;
+	min-width: 1000px;
 }
 h1, h2, h3, h4, h5, h6{
 	font-weight: 700;
@@ -31,6 +32,11 @@ h1{
 	font-size: 26px;
 	line-height: 30px;
 	padding: 0 0 20px;
+}
+.inner-page h1{
+	font: 50px/56px 'kelson-sans-bold-bg', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #fff;
 }
 h2{
 	font-size: 18px;
@@ -378,6 +384,8 @@ input[type="checkbox"]{ width: 16px; height: 16px; padding: 0; margin: 0; }
 .header{
 	position: relative;
 	z-index: 5;
+	background: #211f22;
+	height: 74px;
 }
 .main{
 	padding: 30px 0 130px;
@@ -423,41 +431,74 @@ input[type="checkbox"]{ width: 16px; height: 16px; padding: 0; margin: 0; }
 /*main blocks end*/
 
 /*header*/
-/*header holder*/
-.header-holder{
-	padding: 10px 0;
-}
 /*logo*/
 .logo{
 	float: left;
-	background: url(../img/logo.png) no-repeat;
-	width: 220px;
-	height: 85px;
-	text-indent: -9999px;
-	overflow: hidden;
-	margin: 0;
+	font-size: 41px;
+	line-height: 45px;
+	text-transform: uppercase;
+	color: #eeeef0;
+	margin: 18px 0 0 45px;
 }
 .logo a{
 	display: block;
 	height: 100%;
+	color: #eeeef0;
+	text-decoration: none;
 }
 /*logo end*/
-
-/*header holder end*/
 /*header end*/
 
 /*main*/
+/*inner*/
+.intro{
+	height: 516px;
+	position: relative;
+	background: url(../pic/intro/intro-img-lg-01.jpg) no-repeat 50% 0;
+}
+.intro-holder{
+	position: relative;
+}
+.intro h1{
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	padding: 160px 0 10px;
+}
+.intro-description{
+	font-size: 14px;
+	line-height: 25px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #fff;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	max-width: 500px;
+}
+.intro-pictures{
+	position: absolute;
+	right: 50%;
+	top: 0;
+	margin-right: -960px;
+	width: 460px;
+	height: 516px;
+}
+.intro-pictures-item{
+	border: 1px solid #e9025f;
+	width: 460px;
+	height: 258px;
+	overflow: hidden;
+}
+/*inner end*/
 /*main end*/
 
 /*footer*/
 /*footer holder*/
-.footer-holder{
-	padding: 10px 0 0;
-}
+.footer-holder{}
 /*footer holder end*/
 /*footer end*/
 
-.header{ background: #d8f0b8; }
 .content{ background: #d1eef3; }
 .sidebar{ background: #f0dbc1; }
 .aside{ background: #fffeac; }

@@ -10,8 +10,8 @@
 .input-wrapper:before,
 .input-wrapper:after,
 
-.aaaclearfix01:before,
-.aaaclearfix01:after,
+.header-holder:before,
+.header-holder:after,
 
 .aaaclearfix02:before,
 .aaaclearfix02:after,
@@ -75,7 +75,7 @@
 .main:after,
 .main-holder:after,
 .input-wrapper:after,
-.aaaclearfix01:after,
+.header-holder:after,
 .aaaclearfix02:after,
 .aaaclearfix03:after,
 .aaaclearfix04:after,
