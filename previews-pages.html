@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Guide</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	<link href='http://fonts.googleapis.com/css?family=Poiret+One|Roboto+Slab:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css" />
 	<style>
@@ -77,7 +78,25 @@
 		}
 		.page-title{
 			font: 18px/1.2 'poiret one', Arial, Helvetica, sans-serif;
-			padding: 0 0 7px;
+			padding: 0 0 7px 26px;
+			position: relative;
+			min-height: 1.5em;
+		}
+		.page-title:before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 18px;
+			width: 18px;
+			border-radius: 50%;
+			background-color: #f00;
+		}
+		[data-status="continue"] .page-title:before{
+			background-color: #ff0;
+		}
+		[data-status="done"] .page-title:before{
+			background-color: #0f0;
 		}
 		.page-item img{
 			box-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
@@ -98,17 +117,23 @@
 		<div class="center">
 			<h1>Guide</h1>
 			<div class="all-pages">
-				<div class="page-item">
+				<div class="page-item" data-status="">
 					<div class="page-title">Страница 1</div>
-					<a href="#"><img src="temp-previews-img/9_opisanie-marshryta.jpg" alt="opisanie-marshryta" /></a>
+					<a href="description.html">
+						<img src="temp-previews-img/9_opisanie-marshryta.jpg" alt="opisanie-marshryta" />
+					</a>
 				</div>
-				<div class="page-item">
+				<div class="page-item" data-status="continue">
 					<div class="page-title">Страница 2</div>
-					<a href="#"><img src="temp-previews-img/10_stranica-mesta.jpg" alt="stranica-mesta" /></a>
+					<a href="place.html">
+						<img src="temp-previews-img/10_stranica-mesta.jpg" alt="stranica-mesta" />
+					</a>
 				</div>
-				<div class="page-item">
+				<div class="page-item" data-status="">
 					<div class="page-title">Страница 3</div>
-					<a href="#"><img src="temp-previews-img/11_spisok-marshrutov.jpg" alt="spisok-marshrutov" /></a>
+					<a href="routes.html">
+						<img src="temp-previews-img/11_spisok-marshrutov.jpg" alt="spisok-marshrutov" />
+					</a>
 				</div>
 			</div>
 		</div>
