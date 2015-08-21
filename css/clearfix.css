@@ -13,14 +13,14 @@
 .header-holder:before,
 .header-holder:after,
 
-.aaaclearfix02:before,
-.aaaclearfix02:after,
+.top-panel:before,
+.top-panel:after,
 
-.aaaclearfix03:before,
-.aaaclearfix03:after,
+.description-block:before,
+.description-block:after,
 
-.aaaclearfix04:before,
-.aaaclearfix04:after,
+.short-info-row:before,
+.short-info-row:after,
 
 .aaaclearfix05:before,
 .aaaclearfix05:after,
@@ -76,9 +76,9 @@
 .main-holder:after,
 .input-wrapper:after,
 .header-holder:after,
-.aaaclearfix02:after,
-.aaaclearfix03:after,
-.aaaclearfix04:after,
+.top-panel:after,
+.description-block:after,
+.short-info-row:after,
 .aaaclearfix05:after,
 .aaaclearfix06:after,
 .aaaclearfix07:after,
