@@ -788,7 +788,7 @@ input[type="checkbox"]{ width: 16px; height: 16px; padding: 0; margin: 0; }
 	border-radius: 2px;
 	padding: 0 12px 3px;
 }
-.memo h3{
+.memo h2{
 	font-size: 12px;
 	line-height: 14px;
 	letter-spacing: -0.03em;
@@ -808,7 +808,7 @@ input[type="checkbox"]{ width: 16px; height: 16px; padding: 0; margin: 0; }
 	padding: 11px 0;
 	counter-increment: section;
 }
-.numbers-list h4{
+.numbers-list h3{
 	font-size: 12px;
 	line-height: 14px;
 	text-transform: uppercase;
@@ -817,10 +817,10 @@ input[type="checkbox"]{ width: 16px; height: 16px; padding: 0; margin: 0; }
 	position: relative;
 	min-height: 22px;
 }
-.numbers-list h4:before{
-	content: counter(section); /*content: counter(section) ".";*/
-	width: 22px; /*ширина контейнера с номером*/
-	height: 22px; /*высота контейнера с номером*/
+.numbers-list h3:before{
+	content: counter(section);
+	width: 22px;
+	height: 22px;
 	font-size: 12px;
 	line-height: 20px;
 	font-weight: 600;
@@ -828,7 +828,7 @@ input[type="checkbox"]{ width: 16px; height: 16px; padding: 0; margin: 0; }
 	text-align: center;
 	background: #e9025f;
 	border-radius: 50%;
-	border: 1px solid #ebebeb; /*бордер на нумерации*/
+	border: 1px solid #ebebeb;
 	position: absolute;
 	left: 0;
 	top: 0;
