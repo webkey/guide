@@ -48,9 +48,25 @@ function yandexMap(){
 }
 /* yandexMap */
 
+/* fancybox */
+function fancybox(){
+	/*default popup*/
+	var popup = $('.popup-open');
+	if (popup.length) {
+		popup.fancybox({
+			wrapCSS: 'popup-default',
+			padding: 0,
+			openEffect: 'none',
+			closeEffect: 'none'
+		});
+	}
+}
+/* fancybox end */
+
 /** ready/load/resize document **/
 
 $(document).ready(function(){
 	placeholderInit();
 	yandexMap();
+	fancybox();
 });

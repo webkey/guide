@@ -59,7 +59,7 @@
 	<nav class="top-panel">
 		<div class="max-wrap">
 			<!--top menu list-->
-			<ul class="top-menu-list">
+			<ul class="top-menu-list with-icons">
 				<li class="active"><a href="#"><i class="icon-road-white"></i>я здесь был</a></li>
 				<li><a href="#"><i class="icon-review-white"></i>мнения туристов</a></li>
 			</ul>
@@ -88,8 +88,8 @@
 								<i class="icon-address-gray"></i>
 								<div class="dl">
 									<strong class="dt">Address</strong>
-									<div class="dd">35 Rue du Chevalier de La Barre,
-										75018 Paris, France &nbsp;&nbsp;<a href="#">На карте</a></div>
+									<div class="dd">35 Rue du Chevalier de La Barre, <br />
+										75018 Paris, France <i class="space-g1"></i><a href="#">На карте</a></div>
 								</div>
 							</div>
 							<div class="short-info-item">
@@ -288,7 +288,7 @@
 			<!--streak-->
 			<div class="streak">
 				<div class="box-right">
-					<div class="streak-text"><i class="icon-note-gray"></i>Вы тоже были в этом месте? <a href="#">Напишите пару строк</a></div>
+					<div class="streak-text"><i class="icon-note-gray"></i>Вы тоже были в этом месте? <a href="#comment-popup" class="popup-open">Напишите пару строк</a></div>
 				</div>
 			</div>
 			<!--streak end-->
@@ -330,7 +330,7 @@
 								<div class="similar-img">
 									<img src="pic/similar/similar-02.jpg" width="219" height="219" alt="image description" />
 								</div>
-								<h3>Площадь Пикадилли</h3>
+								<h3>Театр Глобус</h3>
 								<strong class="similar-meta">London, England</strong>
 							</a>
 						</li>
@@ -339,7 +339,7 @@
 								<div class="similar-img">
 									<img src="pic/similar/similar-03.jpg" width="219" height="219" alt="image description" />
 								</div>
-								<h3>Площадь Пикадилли</h3>
+								<h3>Вестминстер</h3>
 								<strong class="similar-meta">London, England</strong>
 							</a>
 						</li>
@@ -348,7 +348,7 @@
 								<div class="similar-img">
 									<img src="pic/similar/similar-04.jpg" width="219" height="219" alt="image description" />
 								</div>
-								<h3>Площадь Пикадилли</h3>
+								<h3>Букингемский дворец</h3>
 								<strong class="similar-meta">London, England</strong>
 							</a>
 						</li>
@@ -394,6 +394,43 @@
 	</div>
 </footer>
 <!--footer end-->
+
+<!--popups-->
+<div class="popups">
+	<div class="popup">
+		<!-- comment form -->
+		<div id="comment-popup" class="comment-form">
+			<form action="#" method="get">
+				<div class="form-line">
+					<div class="input-holder field-email">
+						<i class="icon-email"></i>
+						<input type="text" placeholder="E-mail" />
+					</div>
+				</div>
+				<div class="form-line">
+					<div class="input-holder field-password">
+						<i class="icon-password"></i>
+						<input type="text" placeholder="Пароль" />
+					</div>
+				</div>
+				<div class="form-line">
+					<div class="input-holder field-message">
+						<i class="icon-message"></i>
+						<textarea placeholder="Ваше сообщение"></textarea>
+					</div>
+				</div>
+				<div class="form-buttons">
+					<div class="btn btn-send">
+						<i class="icon-edit-white"></i><span>Отправить комментарий</span>
+						<input type="submit" value="">
+					</div>
+				</div>
+			</form>
+		</div>
+		<!-- comment form end -->
+	</div>
+</div>
+<!--popups-->
 
 <!--JQuery library-->
 <script src="js/jquery-1.11.3.min.js"></script>

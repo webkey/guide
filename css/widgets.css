@@ -14,10 +14,10 @@
 
 /* Layout helpers
 ----------------------------------*/
-.ui-helper-hidden {
+.ui-helper-hidden{
 	display: none;
 }
-.ui-helper-hidden-accessible {
+.ui-helper-hidden-accessible{
 	border: 0;
 	clip: rect(0 0 0 0);
 	height: 1px;
@@ -27,7 +27,7 @@
 	position: absolute;
 	width: 1px;
 }
-.ui-helper-reset {
+.ui-helper-reset{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -38,56 +38,49 @@
 	list-style: none;
 }
 .ui-helper-clearfix:before,
-.ui-helper-clearfix:after {
+.ui-helper-clearfix:after{
 	content: "";
 	display: table;
 	border-collapse: collapse;
 }
-.ui-helper-clearfix:after {
+.ui-helper-clearfix:after{
 	clear: both;
 }
-.ui-helper-clearfix {
+.ui-helper-clearfix{
 	min-height: 0; /* support: IE7 */
 }
-.ui-helper-zfix {
+.ui-helper-zfix{
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
 	position: absolute;
 	opacity: 0;
-	filter:Alpha(Opacity=0); /* support: IE8 */
+	filter: Alpha(Opacity=0); /* support: IE8 */
 }
-
-.ui-front {
+.ui-front{
 	z-index: 100;
 }
-
-
 /* Interaction Cues
 ----------------------------------*/
-.ui-state-disabled {
+.ui-state-disabled{
 	cursor: default !important;
 }
-
-
 /* Icons
 ----------------------------------*/
 
 /* states and images */
-.ui-icon {
+.ui-icon{
 	display: block;
 	text-indent: -99999px;
 	overflow: hidden;
 	background-repeat: no-repeat;
 }
-
-
 /* Misc visuals
 ----------------------------------*/
 
 /* Overlays */
-.ui-widget-overlay {
+.ui-widget-overlay{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -107,74 +100,61 @@
 .fancybox-wrap object,
 .fancybox-nav,
 .fancybox-nav span,
-.fancybox-tmp
-{
+.fancybox-tmp{
 	padding: 0;
 	margin: 0;
 	border: 0;
 	outline: none;
 	vertical-align: top;
 }
-
-.fancybox-wrap {
+.fancybox-wrap{
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 8020;
 }
-
-.fancybox-skin {
+.fancybox-skin{
 	position: relative;
-	background: #36657f;
+	background: #e9025f;
 	color: #444;
 	text-shadow: none;
-	        border-radius: 4px;
+	border-radius: 4px;
 }
-
-.fancybox-opened {
+.fancybox-opened{
 	z-index: 8030;
 }
-
-.fancybox-opened .fancybox-skin {
-	        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+.fancybox-opened .fancybox-skin{
+	box-shadow: 0 4px 18px rgba(0, 0, 0, 0.78);
 }
-
-.fancybox-outer, .fancybox-inner {
+.fancybox-outer, .fancybox-inner{
 	position: relative;
 }
-
-.fancybox-inner {
+.fancybox-inner{
 	overflow: hidden;
 }
-
-.fancybox-type-iframe .fancybox-inner {
+.fancybox-type-iframe .fancybox-inner{
 	-webkit-overflow-scrolling: touch;
 }
-
-.fancybox-error {
+.fancybox-error{
 	color: #444;
-	font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 0;
 	padding: 15px;
 	white-space: nowrap;
 }
-
-.fancybox-image, .fancybox-iframe {
+.fancybox-image, .fancybox-iframe{
 	display: block;
 	width: 100%;
 	height: 100%;
 }
-
-.fancybox-image {
+.fancybox-image{
 	max-width: 100%;
 	max-height: 100%;
 }
-
-#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span{
 	background-image: url('../img/fancybox/fancybox_sprite.png');
 }
-
-#fancybox-loading {
+#fancybox-loading{
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -185,24 +165,31 @@
 	cursor: pointer;
 	z-index: 8060;
 }
-
-#fancybox-loading div {
+#fancybox-loading div{
 	width: 44px;
 	height: 44px;
 	background: url('../img/fancybox/fancybox_loading.gif') center center no-repeat;
 }
-
-.fancybox-close {
+.fancybox-close{
 	position: absolute;
-	top: -18px;
-	right: -18px;
+	top: -14px;
+	right: -14px;
 	width: 36px;
 	height: 36px;
 	cursor: pointer;
 	z-index: 8040;
+	background: #e9025f url(../img/sprite-icons.png) no-repeat 12px -1304px;
+	border-radius: 50%;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+	backface-visibility: hidden;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
 }
-
-.fancybox-nav {
+.fancybox-close:hover{
+	background-color: #cf025d;
+}
+.fancybox-nav{
 	position: absolute;
 	top: 0;
 	width: 40%;
@@ -210,19 +197,16 @@
 	cursor: pointer;
 	text-decoration: none;
 	background: transparent url('../img/fancybox/blank.gif'); /* helps IE */
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	z-index: 8040;
 }
-
-.fancybox-prev {
+.fancybox-prev{
 	left: 0;
 }
-
-.fancybox-next {
+.fancybox-next{
 	right: 0;
 }
-
-.fancybox-nav span {
+.fancybox-nav span{
 	position: absolute;
 	top: 50%;
 	width: 36px;
@@ -232,22 +216,18 @@
 	z-index: 8040;
 	visibility: hidden;
 }
-
-.fancybox-prev span {
+.fancybox-prev span{
 	left: 10px;
 	background-position: 0 -36px;
 }
-
-.fancybox-next span {
+.fancybox-next span{
 	right: 10px;
 	background-position: 0 -72px;
 }
-
-.fancybox-nav:hover span {
+.fancybox-nav:hover span{
 	visibility: visible;
 }
-
-.fancybox-tmp {
+.fancybox-tmp{
 	position: absolute;
 	top: -99999px;
 	left: -99999px;
@@ -256,43 +236,37 @@
 	max-height: 99999px;
 	overflow: visible !important;
 }
-
 /* Overlay helper */
-.fancybox-lock {
+.fancybox-lock{
 	width: auto;
 }
-
-.fancybox-overlay {
+.fancybox-overlay{
 	position: absolute;
 	top: 0;
 	left: 0;
 	overflow: hidden;
 	display: none;
 	z-index: 8010;
-	background: url('../img/fancybox/fancybox_overlay.png');
+	background: url('../img/empty.png');
 }
-
-.fancybox-overlay-fixed {
+.fancybox-overlay-fixed{
 	position: fixed;
 	bottom: 0;
 	right: 0;
 }
-
 /* Title helper */
 
-.fancybox-title {
+.fancybox-title{
 	visibility: hidden;
-	font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font: normal 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
 	position: relative;
 	text-shadow: none;
 	z-index: 8050;
 }
-
-.fancybox-opened .fancybox-title {
+.fancybox-opened .fancybox-title{
 	visibility: visible;
 }
-
-.fancybox-title-float-wrap {
+.fancybox-title-float-wrap{
 	position: absolute;
 	bottom: 0;
 	right: 50%;
@@ -300,8 +274,7 @@
 	z-index: 8050;
 	text-align: center;
 }
-
-.fancybox-title-float-wrap .child {
+.fancybox-title-float-wrap .child{
 	display: inline-block;
 	margin-right: -100%;
 	padding: 2px 20px;
@@ -309,23 +282,20 @@
 	background: rgba(0, 0, 0, 0.8);
 	border-radius: 15px;
 	text-shadow: 0 1px 2px #222;
-	color: #FFF;
+	color: #fff;
 	font-weight: bold;
 	line-height: 24px;
 	white-space: nowrap;
 }
-
-.fancybox-title-outside-wrap {
+.fancybox-title-outside-wrap{
 	position: relative;
 	margin-top: 10px;
 	color: #fff;
 }
-
-.fancybox-title-inside-wrap {
+.fancybox-title-inside-wrap{
 	padding-top: 10px;
 }
-
-.fancybox-title-over-wrap {
+.fancybox-title-over-wrap{
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -334,65 +304,56 @@
 	background: #000;
 	background: rgba(0, 0, 0, .8);
 }
-
 /*Retina graphics!*/
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-	   only screen and (min--moz-device-pixel-ratio: 1.5),
-	   only screen and (min-device-pixel-ratio: 1.5){
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5){
 
-	#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+	#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span{
 		background-image: url('../img/fancybox/fancybox_sprite@2x.png');
 		background-size: 44px 152px; /*The size of the normal image, half the size of the hi-res image*/
 	}
-
-	#fancybox-loading div {
+	#fancybox-loading div{
 		background-image: url('../img/fancybox/fancybox_loading@2x.gif');
 		background-size: 24px 24px; /*The size of the normal image, half the size of the hi-res image*/
 	}
 }
 /*--- 1. Fancybox End ---*/
 
-
 /*--- 2. bxSlider ---*/
 /** RESET AND LAYOUT
 ===================================*/
 
-.bx-wrapper {
+.bx-wrapper{
 	position: relative;
 	margin: 0 auto;
 	padding: 0;
 	*zoom: 1;
 }
-
-.bx-wrapper img {
+.bx-wrapper img{
 	max-width: 100%;
 	display: block;
 }
-
 /** THEME
 ===================================*/
 
-.bx-wrapper .bx-viewport {
+.bx-wrapper .bx-viewport{
 	background: #fff;
-	
+
 	/*fix other elements on the page moving (on Chrome)*/
 	-webkit-transform: translatez(0);
 	-moz-transform: translatez(0);
-    	-ms-transform: translatez(0);
-    	-o-transform: translatez(0);
-    	transform: translatez(0);
+	-ms-transform: translatez(0);
+	-o-transform: translatez(0);
+	transform: translatez(0);
 }
-
 .bx-wrapper .bx-pager,
-.bx-wrapper .bx-controls-auto {
+.bx-wrapper .bx-controls-auto{
 	position: absolute;
 	bottom: -30px;
 	width: 100%;
 }
-
 /* LOADER */
 
-.bx-wrapper .bx-loading {
+.bx-wrapper .bx-loading{
 	min-height: 50px;
 	background: url(../img/bx-slider/bx_loader.gif) center center no-repeat #fff;
 	height: 100%;
@@ -402,10 +363,9 @@
 	left: 0;
 	z-index: 2000;
 }
-
 /* PAGER */
 
-.bx-wrapper .bx-pager {
+.bx-wrapper .bx-pager{
 	text-align: center;
 	font-size: .85em;
 	font-family: Arial;
@@ -414,15 +374,13 @@
 	padding-top: 20px;
 	z-index: 100;
 }
-
 .bx-wrapper .bx-pager .bx-pager-item,
-.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item{
 	display: inline-block;
 	*zoom: 1;
 	*display: inline;
 }
-
-.bx-wrapper .bx-pager.bx-default-pager a {
+.bx-wrapper .bx-pager.bx-default-pager a{
 	background: #666;
 	text-indent: -9999px;
 	display: block;
@@ -432,33 +390,27 @@
 	outline: 0;
 	border-radius: 5px;
 }
-
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
-.bx-wrapper .bx-pager.bx-default-pager a.active {
+.bx-wrapper .bx-pager.bx-default-pager a.active{
 	background: #000;
 }
-
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
-.bx-wrapper .bx-prev {
+.bx-wrapper .bx-prev{
 	left: 10px;
 	background: url(../img/bx-slider/controls.png) no-repeat 0 -32px;
 }
-
-.bx-wrapper .bx-next {
+.bx-wrapper .bx-next{
 	right: 10px;
 	background: url(../img/bx-slider/controls.png) no-repeat -43px -32px;
 }
-
-.bx-wrapper .bx-prev:hover {
+.bx-wrapper .bx-prev:hover{
 	background-position: 0 0;
 }
-
-.bx-wrapper .bx-next:hover {
+.bx-wrapper .bx-next:hover{
 	background-position: -43px 0;
 }
-
-.bx-wrapper .bx-controls-direction a {
+.bx-wrapper .bx-controls-direction a{
 	position: absolute;
 	top: 50%;
 	margin-top: -16px;
@@ -468,18 +420,15 @@
 	text-indent: -9999px;
 	z-index: 9999;
 }
-
-.bx-wrapper .bx-controls-direction a.disabled {
+.bx-wrapper .bx-controls-direction a.disabled{
 	display: none;
 }
-
 /* AUTO CONTROLS (START / STOP) */
 
-.bx-wrapper .bx-controls-auto {
+.bx-wrapper .bx-controls-auto{
 	text-align: center;
 }
-
-.bx-wrapper .bx-controls-auto .bx-start {
+.bx-wrapper .bx-controls-auto .bx-start{
 	display: block;
 	text-indent: -9999px;
 	width: 10px;
@@ -488,13 +437,11 @@
 	background: url(../img/bx-slider/controls.png) -86px -11px no-repeat;
 	margin: 0 3px;
 }
-
 .bx-wrapper .bx-controls-auto .bx-start:hover,
-.bx-wrapper .bx-controls-auto .bx-start.active {
+.bx-wrapper .bx-controls-auto .bx-start.active{
 	background-position: -86px 0;
 }
-
-.bx-wrapper .bx-controls-auto .bx-stop {
+.bx-wrapper .bx-controls-auto .bx-stop{
 	display: block;
 	text-indent: -9999px;
 	width: 9px;
@@ -503,36 +450,31 @@
 	background: url(../img/bx-slider/controls.png) -86px -44px no-repeat;
 	margin: 0 3px;
 }
-
 .bx-wrapper .bx-controls-auto .bx-stop:hover,
-.bx-wrapper .bx-controls-auto .bx-stop.active {
+.bx-wrapper .bx-controls-auto .bx-stop.active{
 	background-position: -86px -33px;
 }
-
 /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
 
-.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager{
 	text-align: left;
 	width: 80%;
 }
-
-.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto{
 	right: 0;
 	width: 35px;
 }
-
 /* IMAGE CAPTIONS */
 
-.bx-wrapper .bx-caption {
+.bx-wrapper .bx-caption{
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	background: #666\9;
+	background: #666 \9;
 	background: rgba(80, 80, 80, 0.75);
 	width: 100%;
 }
-
-.bx-wrapper .bx-caption span {
+.bx-wrapper .bx-caption span{
 	color: #fff;
 	font-family: Arial;
 	display: block;
@@ -543,47 +485,105 @@
 
 /*--- 3. UI Multiselect ---*/
 /* jquery multiselect core */
-.ui-multiselect { padding:2px 0 2px 4px; text-align:left }
-.ui-multiselect span.ui-icon { float:right }
-.ui-multiselect-single .ui-multiselect-checkboxes input { position:absolute !important; top: auto !important; left:-9999px; }
-.ui-multiselect-single .ui-multiselect-checkboxes label { padding:5px; }
- 
-.ui-multiselect-header { margin-bottom:3px; padding:3px 0 3px 4px }
-.ui-multiselect-header ul { font-size:0.9em }
-.ui-multiselect-header ul li { float:left; padding:0 10px 0 0 }
-.ui-multiselect-header a { text-decoration:none }
-.ui-multiselect-header a:hover { text-decoration:underline }
-.ui-multiselect-header span.ui-icon { float:left }
-.ui-multiselect-header li.ui-multiselect-close { float:right; text-align:right; padding-right:0 }
- 
-.ui-multiselect-menu { display:none; padding:3px; position:absolute; z-index:10000; text-align: left }
-.ui-multiselect-checkboxes { position:relative /* fixes bug in IE6/7 */; overflow-y:scroll }
-.ui-multiselect-checkboxes label { cursor:default; display:block; border:1px solid transparent; padding:3px 1px }
-.ui-multiselect-checkboxes label input { position:relative; top:1px }
-.ui-multiselect-checkboxes li { clear:both; font-size:0.9em; padding-right:3px }
-.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label { text-align:center; font-weight:bold; border-bottom:1px solid }
-.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label a { display:block; padding:3px; margin:1px 0; text-decoration:none }
- 
-/* remove label borders in IE6 because IE6 does not support transparency */
-* html .ui-multiselect-checkboxes label { border:none }
-/* jquery multiselect core end */
- 
-/* jquery multiselect style */
-button.cselect {
-	display:block;
-	position:relative;
-	zoom:1;
-	padding:0;
-	margin:0;
-	line-height: 16px;
-	border:none;
-	background:none;
+.ui-multiselect{
+	padding: 2px 0 2px 4px;
+	text-align: left
 }
-button.cselect .select-inner {
-	display:block;
-	background-color:#fff;
-	padding:6px 28px 6px 12px;
-	position:relative;
+.ui-multiselect span.ui-icon{
+	float: right
+}
+.ui-multiselect-single .ui-multiselect-checkboxes input{
+	position: absolute !important;
+	top: auto !important;
+	left: -9999px;
+}
+.ui-multiselect-single .ui-multiselect-checkboxes label{
+	padding: 5px;
+}
+.ui-multiselect-header{
+	margin-bottom: 3px;
+	padding: 3px 0 3px 4px
+}
+.ui-multiselect-header ul{
+	font-size: 0.9em
+}
+.ui-multiselect-header ul li{
+	float: left;
+	padding: 0 10px 0 0
+}
+.ui-multiselect-header a{
+	text-decoration: none
+}
+.ui-multiselect-header a:hover{
+	text-decoration: underline
+}
+.ui-multiselect-header span.ui-icon{
+	float: left
+}
+.ui-multiselect-header li.ui-multiselect-close{
+	float: right;
+	text-align: right;
+	padding-right: 0
+}
+.ui-multiselect-menu{
+	display: none;
+	padding: 3px;
+	position: absolute;
+	z-index: 10000;
+	text-align: left
+}
+.ui-multiselect-checkboxes{
+	position: relative /* fixes bug in IE6/7 */;
+	overflow-y: scroll
+}
+.ui-multiselect-checkboxes label{
+	cursor: default;
+	display: block;
+	border: 1px solid transparent;
+	padding: 3px 1px
+}
+.ui-multiselect-checkboxes label input{
+	position: relative;
+	top: 1px
+}
+.ui-multiselect-checkboxes li{
+	clear: both;
+	font-size: 0.9em;
+	padding-right: 3px
+}
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label{
+	text-align: center;
+	font-weight: bold;
+	border-bottom: 1px solid
+}
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label a{
+	display: block;
+	padding: 3px;
+	margin: 1px 0;
+	text-decoration: none
+}
+/* remove label borders in IE6 because IE6 does not support transparency */
+* html .ui-multiselect-checkboxes label{
+	border: none
+}
+/* jquery multiselect core end */
+
+/* jquery multiselect style */
+button.cselect{
+	display: block;
+	position: relative;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	line-height: 16px;
+	border: none;
+	background: none;
+}
+button.cselect .select-inner{
+	display: block;
+	background-color: #fff;
+	padding: 6px 28px 6px 12px;
+	position: relative;
 	font-size: 12px;
 	line-height: 16px;
 	color: #808080;
@@ -591,13 +591,13 @@ button.cselect .select-inner {
 	border: 1px solid #d5d5d5;
 	border-radius: 2px;
 }
-button.cselect .ui-icon {
-	position:absolute;
-	right:0;
-	top:0;
-	height:100%;
-	width:30px;
-	display:block;
+button.cselect .ui-icon{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 30px;
+	display: block;
 	background: none;
 }
 button.cselect .ui-icon .arrow-select{
@@ -627,49 +627,51 @@ button.cselect .ui-icon .arrow-select:after{
 	margin-left: -4px;
 }
 /*delete end*/
-button.cselect .select-text {
-	display:block;
-	overflow:hidden;
+button.cselect .select-text{
+	display: block;
+	overflow: hidden;
 	text-overflow: ellipsis;
-	white-space:nowrap;
+	white-space: nowrap;
 }
 /* multiselect button end */
 
 /* multiselect menu */
-div.cselect.ui-multiselect-menu {
-	padding:2px 0;
-	margin:0;
+div.cselect.ui-multiselect-menu{
+	padding: 2px 0;
+	margin: 0;
 }
-div.cselect .ui-multiselect-checkboxes {
-	padding:0;
-	margin:0;
-	list-style-type:none;
+div.cselect .ui-multiselect-checkboxes{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
 	height: auto !important;
-	max-height:200px;
-	overflow:auto;
-	background-color:#fff;
+	max-height: 200px;
+	overflow: auto;
+	background-color: #fff;
 	border: 1px solid #d5d5d5;
 	border-radius: 2px;
 }
-div.cselect .ui-multiselect-checkboxes li {padding:0;}
-div.cselect .ui-multiselect-checkboxes label input {
-	position:absolute;
-	left:-9999px;
+div.cselect .ui-multiselect-checkboxes li{
+	padding: 0;
 }
-div.cselect .ui-multiselect-checkboxes label {
-	display:block;
-	cursor:pointer;
+div.cselect .ui-multiselect-checkboxes label input{
+	position: absolute;
+	left: -9999px;
+}
+div.cselect .ui-multiselect-checkboxes label{
+	display: block;
+	cursor: pointer;
 	font-size: 12px;
 	line-height: 16px;
 	color: #808080;
 	font-weight: 400;
-	padding:6px 12px 6px;
+	padding: 6px 12px 6px;
 }
 div.cselect .ui-multiselect-checkboxes label:hover{
 	background-color: #f0f0f0;
 }
-div.cselect .ui-multiselect-checkboxes label.ui-state-active {
-	background-color:#f7f7f7;
+div.cselect .ui-multiselect-checkboxes label.ui-state-active{
+	background-color: #f7f7f7;
 }
 /* multiselect menu end */
 /*--- 3. UI Multiselect End ---*/
@@ -683,9 +685,10 @@ div.cselect .ui-multiselect-checkboxes label.ui-state-active {
 	line-height: 14px;
 	height: 14px;
 }
-.jquery-checkbox .mark {display: inline;}
-
-.jquery-checkbox img {
+.jquery-checkbox .mark{
+	display: inline;
+}
+.jquery-checkbox img{
 	vertical-align: middle;
 	width: 16px;
 	height: 16px;
@@ -693,38 +696,42 @@ div.cselect .ui-multiselect-checkboxes label.ui-state-active {
 }
 .jquery-checkbox img,
 .jquery-checkbox-disabled img,
-.jquery-checkbox-checked .jquery-checkbox-disabled img{background-position: 0 0;}
-
+.jquery-checkbox-checked .jquery-checkbox-disabled img{
+	background-position: 0 0;
+}
 .jquery-checkbox-checked img,
-.jquery-checkbox-checked .jquery-checkbox-hover img {background-position: 0 -34px; }
+.jquery-checkbox-checked .jquery-checkbox-hover img{
+	background-position: 0 -34px;
+}
 /* checkbox end */
 
 /* radio */
-.jquery-radiobox {
+.jquery-radiobox{
 	cursor: pointer;
 	margin: 5px 5px 0 0;
 	font-size: 14px;
 	line-height: 14px;
 	height: 14px;
 }
-.jquery-radiobox .mark {
+.jquery-radiobox .mark{
 	display: inline;
 }
-
-.jquery-radiobox img {
+.jquery-radiobox img{
 	vertical-align: top;
 	width: 14px;
 	height: 14px;
 	background: url(../img/sprite-forms.png) 0 0 no-repeat;
 }
-
 .jquery-radiobox img,
 .jquery-radiobox-disabled img,
-.jquery-radiobox-checked .jquery-radiobox-disabled img{background-position: 0 0;}
-
+.jquery-radiobox-checked .jquery-radiobox-disabled img{
+	background-position: 0 0;
+}
 .jquery-radiobox-checked img,
 .jquery-radiobox-checked .jquery-radiobox-hover img,
-.jquery-radiobox-checked img{background-position: 0 -34px;}
+.jquery-radiobox-checked img{
+	background-position: 0 -34px;
+}
 /* radio end */
 /*--- 4. Jquery Checkbox (check/radio) ---*/
 
@@ -736,11 +743,21 @@ div.cselect .ui-multiselect-checkboxes label.ui-state-active {
 * Copyright 2014 jQuery Foundation and other contributors; Licensed MIT */
 
 /*style inputs*/
-.datepickers{ margin-right: -20px; padding: 0 0 10px; }
+.datepickers{
+	margin-right: -20px;
+	padding: 0 0 10px;
+}
 .datepickers:before,
-.datepickers:after{ content: ""; display: table; }
-.datepickers:after{ clear: both; }
-.datepickers{ zoom: 1; }
+.datepickers:after{
+	content: "";
+	display: table;
+}
+.datepickers:after{
+	clear: both;
+}
+.datepickers{
+	zoom: 1;
+}
 .datepickers .datepicker{
 	float: left;
 	padding-right: 20px;
@@ -763,7 +780,7 @@ div.cselect .ui-multiselect-checkboxes label.ui-state-active {
 /*style inputs end*/
 
 /* Overlays */
-.ui-widget-overlay {
+.ui-widget-overlay{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -789,21 +806,21 @@ div.cselect .ui-multiselect-checkboxes label.ui-state-active {
 	border-radius: 4px;
 }
 .ui-datepicker .ui-datepicker-prev,
-.ui-datepicker .ui-datepicker-next {
+.ui-datepicker .ui-datepicker-next{
 	position: absolute;
 	top: 0;
 	width: 30px;
 	height: 31px;
 	cursor: pointer !important;
 }
-.ui-datepicker .ui-datepicker-prev {
+.ui-datepicker .ui-datepicker-prev{
 	left: 0;
 }
-.ui-datepicker .ui-datepicker-next {
+.ui-datepicker .ui-datepicker-next{
 	right: 0;
 }
 .ui-datepicker .ui-datepicker-prev span,
-.ui-datepicker .ui-datepicker-next span {
+.ui-datepicker .ui-datepicker-next span{
 	display: block;
 	position: absolute;
 	left: 50%;
@@ -825,7 +842,7 @@ div.cselect .ui-multiselect-checkboxes label.ui-state-active {
 .ui-datepicker .ui-datepicker-prev span:before,
 .ui-datepicker .ui-datepicker-next span:before,
 .ui-datepicker .ui-datepicker-prev span:after,
-.ui-datepicker .ui-datepicker-next span:after {
+.ui-datepicker .ui-datepicker-next span:after{
 	content: '';
 	position: absolute;
 	left: 0;
@@ -879,27 +896,27 @@ div.cselect .ui-multiselect-checkboxes label.ui-state-active {
 .ui-datepicker .ui-state-hover span:after{
 	background: #f5f5f5;
 }
-.ui-datepicker .ui-datepicker-title {
+.ui-datepicker .ui-datepicker-title{
 	font-size: 15px;
 	line-height: 31px;
 	color: #262626;
 	text-align: center;
 	background: #f5f5f5;
 }
-.ui-datepicker .ui-datepicker-title select {
+.ui-datepicker .ui-datepicker-title select{
 	font-size: 1em;
 	margin: 1px 0;
 }
 .ui-datepicker select.ui-datepicker-month,
-.ui-datepicker select.ui-datepicker-year {
+.ui-datepicker select.ui-datepicker-year{
 	width: 49%;
 }
-.ui-datepicker table {
+.ui-datepicker table{
 	width: 100%;
 	border-collapse: collapse;
 	margin: 0;
 }
-.ui-datepicker th {
+.ui-datepicker th{
 	padding: .7em .3em;
 	text-align: center;
 	border: 0;
@@ -907,7 +924,7 @@ div.cselect .ui-multiselect-checkboxes label.ui-state-active {
 	line-height: 18px;
 	color: #4d4d4d;
 }
-.ui-datepicker td {
+.ui-datepicker td{
 	border: 0;
 	padding: 1px;
 	font-size: 16px;
@@ -917,7 +934,7 @@ div.cselect .ui-multiselect-checkboxes label.ui-state-active {
 	text-align: center;
 }
 .ui-datepicker td span,
-.ui-datepicker td a {
+.ui-datepicker td a{
 	display: block;
 	padding: .3em;
 	text-decoration: none;
@@ -932,28 +949,28 @@ div.cselect .ui-multiselect-checkboxes label.ui-state-active {
 	border-radius: 3px;
 }
 .ui-datepicker td.ui-datepicker-current-day span,
-.ui-datepicker td.ui-datepicker-current-day a {
+.ui-datepicker td.ui-datepicker-current-day a{
 	border: 1px solid #1d7ab2;
 	color: #1d7ab2;
 	font-weight: 600;
 }
 .ui-datepicker td.ui-datepicker-today span,
-.ui-datepicker td.ui-datepicker-today a {
+.ui-datepicker td.ui-datepicker-today a{
 	border: 1px solid #cdcdcd;
 	font-weight: 600;
 	background: #f5f5f5;
 }
 .ui-datepicker .ui-state-disabled span,
-.ui-datepicker .ui-state-disabled a {
+.ui-datepicker .ui-state-disabled a{
 	color: #c8c8c8;
 }
-.ui-datepicker td a.ui-state-hover {
+.ui-datepicker td a.ui-state-hover{
 	border: 1px solid #fa3676;
 	color: #fa3676;
 	border-radius: 3px;
 	font-weight: 600;
 }
-.ui-datepicker .ui-datepicker-buttonpane {
+.ui-datepicker .ui-datepicker-buttonpane{
 	background-image: none;
 	margin: .7em 0 0 0;
 	padding: 0 .2em;
@@ -961,7 +978,7 @@ div.cselect .ui-multiselect-checkboxes label.ui-state-active {
 	border-right: 0;
 	border-bottom: 0;
 }
-.ui-datepicker .ui-datepicker-buttonpane button {
+.ui-datepicker .ui-datepicker-buttonpane button{
 	float: right;
 	margin: .5em .2em .4em;
 	cursor: pointer;
@@ -969,75 +986,73 @@ div.cselect .ui-multiselect-checkboxes label.ui-state-active {
 	width: auto;
 	overflow: visible;
 }
-.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current{
 	float: left;
 }
-
 /* with multiple calendars */
-.ui-datepicker.ui-datepicker-multi {
+.ui-datepicker.ui-datepicker-multi{
 	width: auto;
 }
-.ui-datepicker-multi .ui-datepicker-group {
+.ui-datepicker-multi .ui-datepicker-group{
 	float: left;
 }
-.ui-datepicker-multi .ui-datepicker-group table {
+.ui-datepicker-multi .ui-datepicker-group table{
 	width: 95%;
 	margin: 0 auto .4em;
 }
-.ui-datepicker-multi-2 .ui-datepicker-group {
+.ui-datepicker-multi-2 .ui-datepicker-group{
 	width: 50%;
 }
-.ui-datepicker-multi-3 .ui-datepicker-group {
+.ui-datepicker-multi-3 .ui-datepicker-group{
 	width: 33.3%;
 }
-.ui-datepicker-multi-4 .ui-datepicker-group {
+.ui-datepicker-multi-4 .ui-datepicker-group{
 	width: 25%;
 }
 .ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
-.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header{
 	border-left-width: 0;
 }
-.ui-datepicker-multi .ui-datepicker-buttonpane {
+.ui-datepicker-multi .ui-datepicker-buttonpane{
 	clear: left;
 }
-.ui-datepicker-row-break {
+.ui-datepicker-row-break{
 	clear: both;
 	width: 100%;
 	font-size: 0;
 }
-
 /* RTL support */
-.ui-datepicker-rtl {
+.ui-datepicker-rtl{
 	direction: rtl;
 }
-.ui-datepicker-rtl .ui-datepicker-prev {
+.ui-datepicker-rtl .ui-datepicker-prev{
 	right: 2px;
 	left: auto;
 }
-.ui-datepicker-rtl .ui-datepicker-next {
+.ui-datepicker-rtl .ui-datepicker-next{
 	left: 2px;
 	right: auto;
 }
-.ui-datepicker-rtl .ui-datepicker-prev:hover {
+.ui-datepicker-rtl .ui-datepicker-prev:hover{
 	right: 1px;
 	left: auto;
 }
-.ui-datepicker-rtl .ui-datepicker-next:hover {
+.ui-datepicker-rtl .ui-datepicker-next:hover{
 	left: 1px;
 	right: auto;
 }
-.ui-datepicker-rtl .ui-datepicker-buttonpane {
+.ui-datepicker-rtl .ui-datepicker-buttonpane{
 	clear: right;
 }
-.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+.ui-datepicker-rtl .ui-datepicker-buttonpane button{
 	float: left;
 }
 .ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
-.ui-datepicker-rtl .ui-datepicker-group {
+.ui-datepicker-rtl .ui-datepicker-group{
 	float: right;
 }
 .ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
-.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header{
 	border-right-width: 0;
 	border-left-width: 1px;
 }
